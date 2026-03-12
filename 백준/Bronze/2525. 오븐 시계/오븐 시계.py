@@ -4,13 +4,8 @@ input = sys.stdin.readline
 hours, mins = map(int, input().split())
 time = int(input())
 
-share = 0
-mins = mins + time
-
-if mins >= 60:
-    share = (mins // 60)
-    hours += share
-    mins = (mins % 60)
-    hours = (hours % 24)
+mins += time
+hours = (hours + (mins // 60)) % 24
+mins = mins % 60
 
 print(hours, mins)
