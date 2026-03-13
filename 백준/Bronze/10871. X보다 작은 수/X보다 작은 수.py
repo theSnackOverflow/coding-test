@@ -8,6 +8,6 @@ answer = ''
 for num in nums:
     if num < x:
         answer += (str(num) + " ")
-print(answer.strip())
+print(answer)
        
 
