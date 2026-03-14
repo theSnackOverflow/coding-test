@@ -4,7 +4,7 @@
 # 입력: [1, 0, 1, 1, 1, 1, 1, 0, 0, 0], 출력: [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
 # 입력: [1, 1], 출력: [1, 1]
 
-# 풀이 1. count() 메서드 이용하기
+# 풀이 1. count() 메서드 이용하기 - 1 (나의 풀이)
 def solution (arr):
   answer = []
   count_one, count_zero = arr.count(1), arr.count(0)
